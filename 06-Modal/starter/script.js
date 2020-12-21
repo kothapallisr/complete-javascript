@@ -7,3 +7,4 @@ console.log(btnShowModel);
 for (let i = 0; i < btnShowModel.length; i++) {
   console.log(btnShowModel[i].textContent);
 }
+//
