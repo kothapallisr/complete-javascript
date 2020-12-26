@@ -22,3 +22,9 @@ const restaurant = {
     },
   },
 };
+
+let [s1, s2] = restaurant.starterMenu;
+let [m1, m2] = restaurant.mainMenu;
+console.log(s1, s2);
+[m1, m2] = [m2, m1];
+console.log(m1, m2);
