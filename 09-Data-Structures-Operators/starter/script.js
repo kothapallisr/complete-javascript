@@ -28,3 +28,13 @@ let [m1, m2] = restaurant.mainMenu;
 console.log(s1, s2);
 [m1, m2] = [m2, m1];
 console.log(m1, m2);
+const {
+  openingHours: { thu: th, fri: fr },
+} = restaurant;
+console.log(th, fr);
+
+let a = 5;
+let b = 6;
+console.log(a, b);
+({ open, close } = restaurant.openingHours.thu);
+console.log(open, close);
