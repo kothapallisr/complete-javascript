@@ -64,7 +64,21 @@ console.log('' && 'Jonas');
 console.log(undefined && null);
 console.log(23 && null);
 
+restaurant.numGuests = 0;
 let guests = restaurant.visitors || 10;
 console.log(guests);
-
 guests && console.log(`Total guests: ${guests}`);
+
+// Nullish Coalescing operator ??
+let guestCorrect = restaurant.numGuests ?? 10;
+console.log(`Total guests: ${guestCorrect}`);
+
+// for-of loop
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+for (let item of menu) {
+  console.log(item);
+}
+console.log('--- Restaurant Menu ---');
+for (let [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
