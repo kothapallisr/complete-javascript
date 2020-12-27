@@ -161,3 +161,5 @@ console.log(airline.slice(0, airline.lastIndexOf(' ')));
 console.log('Jonas'.toLowerCase());
 console.log('Jonas'.toUpperCase());
 console.log(airline.replace('TAP', 'NEW'));
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas Schmedtmann'.split(' '));
