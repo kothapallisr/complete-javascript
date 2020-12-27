@@ -149,3 +149,11 @@ console.log(rest.has(arry));
 const openingHoursMap = new Map(Object.entries(openingHours));
 console.log(openingHours);
 console.log(openingHoursMap);
+// Strings
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+console.log(airline.slice(-2));
+console.log(airline.slice(4, airline.indexOf('u')));
+console.log(airline.slice(0, airline.lastIndexOf(' ')));
