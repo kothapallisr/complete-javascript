@@ -84,3 +84,12 @@ console.log('--- Restaurant Menu ---');
 for (let [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
+
+// optional chaining ?.
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we are open at ${open}`);
+}
