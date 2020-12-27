@@ -145,3 +145,7 @@ console.log(rest.has(1));
 console.log(rest);
 rest.delete(arry);
 console.log(rest.has(arry));
+// convert Object to Map
+const openingHoursMap = new Map(Object.entries(openingHours));
+console.log(openingHours);
+console.log(openingHoursMap);
