@@ -107,3 +107,21 @@ console.log(entries);
 for (const [day, { open, close }] of entries) {
   console.log(`On ${day}, we open at ${open} and close at ${close}`);
 }
+// sets
+const orderSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Risotto',
+  'Pizza',
+  'Pasta',
+  'Garlic bread',
+  'Bread',
+]);
+console.log(orderSet);
+console.log(orderSet.size);
+orderSet.delete('Garlic bread');
+console.log(orderSet);
+orderSet.add('Tiramisu');
+console.log(orderSet);
+console.log(orderSet.has('Tiramisu'));
+console.log(new Set('Jonas'));
