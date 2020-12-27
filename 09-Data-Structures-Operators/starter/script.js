@@ -49,3 +49,22 @@ console.log(...roll);
 // rest pattern and parameters
 let [n1, n2, ...arr] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(n1, n2, arr);
+
+// use ANY data type, return ANY data type, short-circuiting
+
+// --- OR ---
+console.log(23 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(undefined || null);
+console.log(23 || '');
+
+// --- AND ---
+console.log(23 && 'Jonas');
+console.log('' && 'Jonas');
+console.log(undefined && null);
+console.log(23 && null);
+
+let guests = restaurant.visitors || 10;
+console.log(guests);
+
+guests && console.log(`Total guests: ${guests}`);
