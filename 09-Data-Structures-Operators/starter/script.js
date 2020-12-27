@@ -157,3 +157,7 @@ console.log(airline.slice(4, 7));
 console.log(airline.slice(-2));
 console.log(airline.slice(4, airline.indexOf('u')));
 console.log(airline.slice(0, airline.lastIndexOf(' ')));
+
+console.log('Jonas'.toLowerCase());
+console.log('Jonas'.toUpperCase());
+console.log(airline.replace('TAP', 'NEW'));
