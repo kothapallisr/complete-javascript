@@ -38,3 +38,14 @@ let b = 6;
 console.log(a, b);
 ({ open, close } = restaurant.openingHours.thu);
 console.log(open, close);
+
+// spread operator ...
+console.log(...restaurant.mainMenu);
+//const menu = { ...restaurant.starterMenu, ...restaurant.mainMenu };
+const roll = [1, 3, 5, 6, 7, 8, 9];
+console.log(roll);
+console.log(...roll);
+
+// rest pattern and parameters
+let [n1, n2, ...arr] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(n1, n2, arr);
