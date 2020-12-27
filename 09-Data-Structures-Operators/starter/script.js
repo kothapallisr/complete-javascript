@@ -125,3 +125,23 @@ orderSet.add('Tiramisu');
 console.log(orderSet);
 console.log(orderSet.has('Tiramisu'));
 console.log(new Set('Jonas'));
+orderSet.clear();
+console.log(orderSet);
+// Maps
+const rest = new Map();
+const arry = [1, 2];
+rest.set('name', 'Classico Italiano');
+rest
+  .set(1, 'Firenze, Italy')
+  .set(2, 'Lisbon, Portugal')
+  .set(true, 'We are open :D')
+  .set(false, 'We are closed')
+  .set(arry, 'test')
+  .set('open', 11)
+  .set('close', 23);
+const time = 21;
+console.log(rest.get(true));
+console.log(rest.has(1));
+console.log(rest);
+rest.delete(arry);
+console.log(rest.has(arry));
