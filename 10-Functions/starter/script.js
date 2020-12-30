@@ -75,5 +75,26 @@ const flightData = [456, 'George Cooper'];
 const flightData2 = [367, 'Mini Cooper'];
 book.call(swiss, ...flightData);
 console.log(swiss);
+
+// apply method
 book.apply(swiss, flightData2);
 console.log(swiss);
+
+// bind method
+const bookLH = book.bind(lufthansa);
+const bookEW = book.bind(eurowings);
+const bookLX = book.bind(swiss);
+bookLH(366, 'Jane Cooper');
+
+// with event listeners
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log('THIS', this);
+  this.planes++;
+  console.log(this.planes);
+};
+//lufthansa.buyPlane();
+
+document
+  .querySelector('.buy')
+  .addEventListener('click', lufthansa.buyPlane.bind(lufthansa));
