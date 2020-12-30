@@ -120,3 +120,20 @@ console.log(addVAT2(200));
   console.log('This function will never run again!');
 })();
 (() => console.log('This function will ALSO never run again!'))();
+
+// closures
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
+
+console.dir(booker);
