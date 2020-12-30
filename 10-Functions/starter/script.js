@@ -121,7 +121,7 @@ console.log(addVAT2(200));
 })();
 (() => console.log('This function will ALSO never run again!'))();
 
-// closures
+// closure
 const secureBooking = function () {
   let passengerCount = 0;
 
