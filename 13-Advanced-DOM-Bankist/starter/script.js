@@ -1,7 +1,7 @@
 'use strict';
 
 ///////////////////////////////////////
-// Modal window
+// Modal window //
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
